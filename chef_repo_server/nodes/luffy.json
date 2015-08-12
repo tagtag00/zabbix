@@ -1,0 +1,12 @@
+{
+  "run_list": [
+    "recipe[security_disabled]",
+    "recipe[devtools_install]",
+    "recipe[apache_setup]",
+    "recipe[php_setup]",
+    "recipe[mysql_setup]"
+  ],
+  "automatic": {
+    "ipaddress": "luffy"
+  }
+}

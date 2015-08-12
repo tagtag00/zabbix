@@ -1,1 +1,3 @@
 .Vagrant
+/cookbooks/
+chef-repo/nodes/*.json
