@@ -1,0 +1,2 @@
+create database <%= @db_name %> character set utf8 collate utf8_bin;
+grant all privileges on <%= @db_name %>.* to <%= @db_user %>@localhost identified by '<%= @db_password %>';

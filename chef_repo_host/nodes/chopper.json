@@ -1,0 +1,9 @@
+{
+  "run_list": [
+    "recipe[security_disabled]",
+    "recipe[zabbix::agent_install]"
+  ],
+  "automatic": {
+    "ipaddress": "chopper"
+  }
+}
