@@ -1,10 +1,16 @@
 {
   "run_list": [
     "recipe[security_disabled]",
-    "recipe[devtools_install]",
-    "recipe[apache_setup]",
-    "recipe[php_setup]",
-    "recipe[mysql_setup]"
+    // "recipe[devtools_install]",
+    "recipe[apache::install]",
+    "recipe[mysql::install]",
+    "recipe[php::install]",
+    "recipe[zabbix::srv_install]",
+    "recipe[zabbix::mysql_setting]",
+    "recipe[zabbix::web_io_install]",
+    "recipe[zabbix::up]"
+    // "recipe[php_setup]",
+    // "recipe[mysql_setup]"
   ],
   "automatic": {
     "ipaddress": "luffy"
