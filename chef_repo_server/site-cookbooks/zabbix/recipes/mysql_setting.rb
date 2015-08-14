@@ -26,9 +26,9 @@ bash "mysql4zabbix setup" do
   user "root"
   cwd "/usr/share/zabbix-mysql"
   code <<-EOC
-    mysql -u root --password=\"#{node['mysql']['root_password']}\" zabbix < schema.sql
-    mysql -u root --password=\"#{node['mysql']['root_password']}\" zabbix < images.sql
-    mysql -u root --password=\"#{node['mysql']['root_password']}\" zabbix < data.sql
+    mysql -u root --password="#{node['mysql']['root_password']}" zabbix < schema.sql
+    mysql -u root --password="#{node['mysql']['root_password']}" zabbix < images.sql
+    mysql -u root --password="#{node['mysql']['root_password']}" zabbix < data.sql
   EOC
 end
 

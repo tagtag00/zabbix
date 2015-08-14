@@ -6,6 +6,7 @@
     "recipe[mysql::install]",
     "recipe[php::install]",
     "recipe[zabbix::srv_install]",
+    "recipe[zabbix::agent_install]",
     "recipe[zabbix::mysql_setting]",
     "recipe[zabbix::web_io_install]",
     "recipe[zabbix::up]"

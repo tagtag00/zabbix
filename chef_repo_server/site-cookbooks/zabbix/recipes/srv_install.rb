@@ -20,7 +20,7 @@ when "rhel"
     action :install
   end
 
-  %w[zabbix22 zabbix22-server zabbix22-server-mysql].each do |pkg|
+  %w[zabbix22 zabbix22-server zabbix22-agent zabbix22-server-mysql].each do |pkg|
     package pkg do
       action :install
     end
