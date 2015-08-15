@@ -21,6 +21,13 @@ when "rhel"
     mode "0655"
   end
 
+  bash "zabbix-web-jp" do
+    user "root"
+    code <<-EOC
+      localedef -f UTF-8 -i ja_JP ja_JP
+    EOC
+  end
+
 when "debian"
 
 end
