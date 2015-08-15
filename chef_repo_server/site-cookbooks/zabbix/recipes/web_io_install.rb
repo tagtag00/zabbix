@@ -28,6 +28,17 @@ when "rhel"
     EOC
   end
 
+  package "ipa-pgothic-fonts" do
+    action :install
+  end
+
+# 手動で/usr/share/zabbix/include/defines.inc.phpの下記の３行を修正
+# define('ZBX_FONTPATH', '/usr/share/fonts/ipa-pgothic'); // where to search for font (GD > 2.0.18)
+# define('ZBX_GRAPH_FONT_NAME', 'ipagp'); // font file name
+# define('ZBX_FONT_NAME', 'ipagp');
+# 
+# httpdとzabbix-serverをrestart
+
 when "debian"
 
 end
