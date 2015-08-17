@@ -9,6 +9,7 @@
     "recipe[zabbix::agent_install]",
     "recipe[zabbix::mysql_setting]",
     "recipe[zabbix::web_io_install]",
+    "recipe[zabbix::mail_setting]",
     "recipe[zabbix::up]"
     // "recipe[php_setup]",
     // "recipe[mysql_setup]"
